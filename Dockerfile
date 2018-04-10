@@ -11,8 +11,8 @@ RUN export NIM_VERSION=0.17.2 && \
     wget "https://github.com/nim-lang/Nim/archive/v$NIM_VERSION.tar.gz" -O - | tar xz && \
     mv "./Nim-$NIM_VERSION" "./Nim" && \
     cd "./Nim" && \
-    wget "https://github.com/nim-lang/csources/archive/master.tar.gz" -O - | tar xz && \
-    mv "./csources-master" "./csources" && \
+    wget "https://github.com/nim-lang/csources/archive/v$NIM_VERSION.tar.gz" -O - | tar xz && \
+    mv "./csources-$NIM_VERSION" "./csources" && \
     cd "./csources" && \
     sh build.sh && \
     cd .. && \
